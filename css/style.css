@@ -71,3 +71,57 @@ nav a:hover {
     padding-left: 50px;
   }
 }
+
+.pageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectCard {
+  background-color: #595959;
+  width: 1000px;
+  height: 250px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "projectImage projectTitle projectTitle"
+    "projectImage . projectLink";
+}
+
+.projectLink {
+  grid-area: projectLink;
+  border: 0px;
+  border-radius: 10px;
+  width: 160px;
+  height: 50px;
+  position: relative;
+  left: 130px;
+  top: -80px;
+  background-color: #5FC4E1;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.projectTitle {
+  grid-area: projectTitle;
+  color: white;
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+
+.projectImage img {
+  grid-area: projectImage;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 25px 0px 0px 25px;
+}
