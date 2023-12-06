@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #3A3A3A;
 }
 
 h1,
@@ -20,4 +21,53 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.navFlex {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.navLinks,
+.navLogo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLinks {
+  width: 100%;
+}
+
+nav a {
+  padding-right: 40px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #5FC4E1;
+  transition-delay: 50ms;
+}
+
+.navLogo img {
+  max-width: 300px;
+  max-height: 100px;
+  padding-left: 50px;
+}
+
+@media (max-width: 800px) {
+  .navFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLogo img {
+    max-width: 200px;
+    max-height: 100px;
+    padding-left: 50px;
+  }
 }
