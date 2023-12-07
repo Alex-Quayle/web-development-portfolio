@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: #3A3A3A;
+  background-color: #4A4A4A;
 }
 
 h1,
@@ -78,8 +78,25 @@ nav a:hover {
   align-items: center;
 }
 
+#about {
+  border: 5px solid #6B6B6B;
+  border-radius: 25px;
+  box-shadow: 5px 5px black;
+  width: 500px;
+  height: 200px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: flex;
+  align-items: flex-start;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+}
+
 .projectCard {
-  background-color: #595959;
+  background-color: #6B6B6B;
   width: 1000px;
   height: 250px;
   border-radius: 25px;
@@ -98,14 +115,15 @@ nav a:hover {
   width: 160px;
   height: 50px;
   position: relative;
-  left: 130px;
+  left: 150px;
   top: -80px;
   background-color: #5FC4E1;
   color: white;
   padding: 14px 30px;
   text-decoration: none;
+  font-weight: bold;
   text-align: center;
-  z-index: 1;
+  z-index: 1
 }
 
 
