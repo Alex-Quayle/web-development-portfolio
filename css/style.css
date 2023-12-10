@@ -23,7 +23,8 @@ p {
 .navFlex {
   display: flex;
   flex-direction: row;
-  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .navLinks,
@@ -39,7 +40,7 @@ p {
 
 nav a {
   padding-right: 40px;
-  font-size: 24px;
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
   color: white;
   text-decoration: none;
 }
@@ -51,23 +52,13 @@ nav a:hover {
 
 .navLogo img {
   max-width: 300px;
-  max-height: 100px;
   padding-left: 50px;
 }
 
-@media (max-width: 800px) {
-  .navFlex {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .navLogo img {
     max-width: 200px;
-    max-height: 100px;
     padding-left: 50px;
   }
-}
 
 .pageSection {
   display: flex;
@@ -80,7 +71,7 @@ nav a:hover {
   border-radius: 25px;
   box-shadow: 5px 5px black;
   width: 500px;
-  height: 200px;
+  min-height: 200px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -93,33 +84,29 @@ nav a:hover {
 
 .projectCard {
   background-color: #3A3A3A;
-  width: 1000px;
-  height: 250px;
+  max-width: 1000px;
+  height: auto;
   border-radius: 25px;
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto auto;
   grid-template-areas: "projectImage projectTitle projectTitle"
-    "projectImage . projectLink";
+                      "projectImage . projectLink";
 }
 
 .projectLink {
   grid-area: projectLink;
-  border: 0px;
   border-radius: 10px;
   width: 160px;
-  height: 50px;
-  position: relative;
-  left: 150px;
-  top: -80px;
+  margin-left: 150px;
+  margin-bottom: 20px;
   background-color: #287895;
   color: white;
   padding: 14px 30px;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  z-index: 1
 }
 
 .projectTitle {
@@ -132,14 +119,14 @@ nav a:hover {
 .projectImage img {
   grid-area: projectImage;
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
   border-radius: 25px 0px 0px 25px;
 }
 
 .heroBanner img {
   display: block;
-  width: 75%;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
@@ -147,28 +134,54 @@ nav a:hover {
 
 .contact {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color: #3A3A3A;
   width: auto;
-  height: 100px;
+  min-height: 100px;
   color: white;
   padding-right: 15px;
-  gap: 10;
   margin-top: 50px;
 }
 
 footer img {
   width: 30px;
-  margin-right: 30px;
+  margin: 20px;
 }
 
-footer h2 {
-  margin-right: 30px;
-  margin-bottom: 5px;
+#farewell {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.farewell {
-  margin-right: 550px;
+@media (max-width: 768px) {
+  .navFlex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about {
+    width: 400px;
+  }
+
+  .projectCard {
+    grid-template-columns: 1fr;
+    grid-template-areas: "projectImage" "projectTitle" "projectLink";
+  }
+
+  .projectLink {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .projectTitle h2 {
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+  }
 }
