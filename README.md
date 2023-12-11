@@ -9,17 +9,17 @@ This is the first draft of what I hope to be a detailed portfolio of the work I 
 ## Installation
 
 No installation necessary. Please visit https://alex-quayle.github.io/web-development-portfolio/ to view the webpage. Below is a screenshot of the deployed page:
-![A screenshot of the portfolio page.](./assets/images/portfolio-shot.png "Portfolio Page")
+![A screenshot of the portfolio page.](./images/portfolio-shot.png "Portfolio Page")
 
 ## Credits
 
 ### Social Link Icons
 
->Dribbble. (n.d.). dribbble logo [ logo ]. Font Awesome. https://fontawesome.com/icons/dribbble?f=brands&s=solid.
+> Dribbble. (n.d.). dribbble logo [ logo ]. Font Awesome. https://fontawesome.com/icons/dribbble?f=brands&s=solid.
 
->Font Awesome. (n.d.). pen-ruler [ logo ]. Font Awesome. https://fontawesome.com/icons/pen-ruler?f=classic&s=solid.
+> Font Awesome. (n.d.). pen-ruler [ logo ]. Font Awesome. https://fontawesome.com/icons/pen-ruler?f=classic&s=solid.
 
->LinkedIn Corporation. (n.d.). linkedin logo [ logo ]. Font Awesome. https://fontawesome.com/icons/linkedin?f=brands&s=solid.
+> LinkedIn Corporation. (n.d.). linkedin logo [ logo ]. Font Awesome. https://fontawesome.com/icons/linkedin?f=brands&s=solid.
 
 ### Learning Resources Utilised
 
