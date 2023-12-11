@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+/* variable to change the text colour, hoping to create more variables as time goes on */
+:root {
+  --text-colour: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,10 +31,9 @@ body {
 nav a {
   padding-right: 40px;
   font-size: clamp(1.5rem, 1.5vw, 3rem);
-  color: white;
+  color: var(--text-colour);
   text-decoration: none;
 }
-
 
 nav a:hover {
   color: #5FC4E1;
@@ -42,11 +46,7 @@ nav a:hover {
   padding-left: 50px;
 }
 
-  .navLogo img {
-    max-width: 200px;
-    padding-left: 50px;
-  }
-
+/* centers the project cards */
 .pageSection {
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   align-items: flex-start;
-  color: white;
+  color: var(--text-colour);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8px;
@@ -77,10 +77,11 @@ nav a:hover {
   margin-bottom: 50px;
   /* creates a grid to house the elements of the project card */
   display: grid;
+  /* makes the grid responsive by creating as many columns as needed, each at least 200px in size */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto auto;
   grid-template-areas: "projectImage projectTitle projectTitle"
-                      "projectImage . projectLink";
+  "projectImage . projectLink";
 }
 
 /* creates a new, larger project card specifically for the featured project */
@@ -109,7 +110,7 @@ nav a:hover {
   margin-left: 150px;
   margin-bottom: 20px;
   background-color: #287895;
-  color: white;
+  color: var(--text-colour);
   padding: 14px 30px;
   text-decoration: none;
   font-weight: bold;
@@ -118,7 +119,7 @@ nav a:hover {
 
 .projectTitle {
   grid-area: projectTitle;
-  color: white;
+  color: var(--text-colour);
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 50px;
@@ -148,11 +149,12 @@ nav a:hover {
   background-color: #3A3A3A;
   width: auto;
   min-height: 100px;
-  color: white;
+  color: var(--text-colour);
   padding-right: 15px;
   margin-top: 50px;
 }
 
+/* resizes the footer social links to a larger size */
 footer img {
   width: 30px;
   margin: 20px;
@@ -187,10 +189,6 @@ footer img {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  .projectTitle h2 {
-    text-align: center;
   }
 
   .contact {
