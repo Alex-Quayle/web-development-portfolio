@@ -100,7 +100,9 @@ nav a:hover {
 
 /* corrects the view project button to accomodate for the new width size */
 #featured .projectLink {
+  margin-top: 60px;
   margin-left: 200px;
+  height: 50px;
 }
 
 .projectLink {
